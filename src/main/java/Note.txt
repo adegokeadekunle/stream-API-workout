@@ -1,0 +1,37 @@
+Lambdas Expression -> is an expression through with we can represent anonymous functions.
+Anonymous functions -> methods that does not name or modifier.
+
+SYNTAX :  Parameter Expression Body
+            ()         ->       System.out.println("Lambda Expressions")
+
+Functional Interfaces ->  these are interfaces that contains only one abstract method.
+                          functional interfaces can also have default and static methods but only one abstract method.
+
+                                  STREAM API
+Stream API -> is used to process collection of objects. A stream is a sequence of objects that supports various methods
+              which cn be pipelined to produce various results.
+
+              A stream is not a data structure, instead it takes input from the collections, Arrays or I/O channels
+
+              Streams don't change the data structure, they only provide the results as per the pipelined methods.
+
+                                        WHY STREAM API
+        1. Functional programming
+        2. Code reduction
+        3. Bulk Operation
+
+Consumer Functional Interface ->  Consumer<T> is an inbuilt interface in java 8. consumer can be used in all
+                                  context where an Object needs to be consumed i.e taken in as an input and
+                                  some operations needs to be performed on the object without returning any result.
+
+Predicate Functional Interface -> This is a functional interface used for conditional check where you think.
+                                  we can use these true/false returning functions in day to day programming we
+                                  should choose predicates.
+                                  the return type of this interface is a boolean.
+
+Supplier  Functional Interface -> This is used in all contexts where there is no input but an output is expected
+
+                                        METHODS IN STREAM API
+            1. Filter method -> for conditional checks
+            2. ForEach method -> for iteration
+
