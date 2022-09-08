@@ -1,10 +1,10 @@
 package streams.filter;
 
-import streams.Employee;
+import entityAndDatabases.employee.Employee;
 
 import java.util.List;
 
-import static streams.DataBase.getEmployees;
+import static entityAndDatabases.employee.DataBase.getEmployees;
 
 public class EmployeeService {
     public List<Employee> evaluateTaxUsers(){

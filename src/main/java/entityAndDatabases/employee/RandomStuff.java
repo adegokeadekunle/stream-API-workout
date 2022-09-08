@@ -1,4 +1,4 @@
-package streams;
+package entityAndDatabases.employee;
 
 public class RandomStuff {
 

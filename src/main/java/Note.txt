@@ -32,6 +32,16 @@ Predicate Functional Interface -> This is a functional interface used for condit
 Supplier  Functional Interface -> This is used in all contexts where there is no input but an output is expected
 
                                         METHODS IN STREAM API
-            1. Filter method -> for conditional checks
-            2. ForEach method -> for iteration
+            1. Filter method -> for conditional checks.
+            2. ForEach method -> for iteration.
+            3. Map -> used for transformation.
+                      map() takes a stream as input and returns a stream.
+                      it is a mapper function that produces a single value for each input value. Hence, it is also called one to one mapping.
+            4. Flat Map -> used for transformation and flattering    (map + flattering).
+                            it is a mapper function that produces multiple values for each input value. Hence, it is also called one to many mapping.
+
+                            NOTE : when to use map -> when you have a stream and you want to transform it to another stream
+                                   when to use flatMap - > when you have multiple streams, and you want to transform it to a single stream.
+
+            5. Optionals ->
 
