@@ -43,5 +43,22 @@ Supplier  Functional Interface -> This is used in all contexts where there is no
                             NOTE : when to use map -> when you have a stream and you want to transform it to another stream
                                    when to use flatMap - > when you have multiple streams, and you want to transform it to a single stream.
 
-            5. Optionals ->
+            5. Optionals -> Used to handle nullability of an object
+                            1. empty -> returns an empty optional instance
+                            2. of -> returns an optional of specified present non-null value
+                            3. ofNullable -> returns an optional of specified present non-null value otherwise returns an empty optional
+
+            6. Reduce -> Used in Aggregating Data
+                         * It combines elements of a stream and produces a single value.
+                         * The reduce() has 2 argument i.e Identity and Accumulator
+                         * The Identity is initial value of type T
+                         * The Accumulator which is a BinaryOperator<T> is a function for combining two values.
+
+            7. Parallel stream -> this is a feature in java 8 meant for utilizing multiple core of the processor.
+
+                                  * Normally java code has one stream of processing where it is executed sequentially.
+                                    whereas, by using parallel stream, we can divide the code into multiple streams that are
+                                    executed into parallel on separate cores and the final result is the combination of the individual outcomes.
+                                  * the order of execution however is not under our control.
+
 

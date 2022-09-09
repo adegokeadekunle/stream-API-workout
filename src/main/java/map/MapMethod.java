@@ -28,5 +28,10 @@ public class MapMethod {
         List<List<String>> phone = customer.stream().map(cust -> cust.getPhoneNumber()).toList();
         System.out.println(phone);
 
+        List<List<String>> phone2 = customer.stream()
+                .filter(c  -> c.getBalance() > 50000)
+                .map(cust -> cust.getPhoneNumber()).toList();
+        System.out.println(phone2);
+
     }
 }

@@ -62,16 +62,16 @@ public class SortingMapsDemo {
         // using lambdas
 
         //Collections.sort((Employee,(o1, o2) ->  o ))
-        empMap.put(new Employee(1,"Adekunle","IT",1_400_000),100);
-        empMap.put(new Employee(2,"Bayo","Security",200_000),101);
-        empMap.put(new Employee(3,"Wale","Transport",800_000),102);
-        empMap.put(new Employee(4,"Yomi","Consulting",900_000),103);
-        empMap.put(new Employee(5,"Funmi","Care",1_000_000),104);
-        empMap.put(new Employee(6,"Titi","Medical",850_000),105);
-        empMap.put(new Employee(7,"Bioye","Security",240_000),106);
-        empMap.put(new Employee(8,"Foluke","Education",830_000),107);
-        empMap.put(new Employee(9,"Toyin","Marketing",1_000_000),108);
-        empMap.put(new Employee(10,"Idowu","Marketing",50_000),109);
+        empMap.put(new Employee(1,"Adekunle","IT","A",1_400_000),100);
+        empMap.put(new Employee(2,"Bayo","Security","C",200_000),101);
+        empMap.put(new Employee(3,"Wale","Transport","B",800_000),102);
+        empMap.put(new Employee(4,"Yomi","Consulting","B",900_000),103);
+        empMap.put(new Employee(5,"Funmi","Care","A",1_000_000),104);
+        empMap.put(new Employee(6,"Titi","Medical","A",850_000),105);
+        empMap.put(new Employee(7,"Bioye","Security","A",240_000),106);
+        empMap.put(new Employee(8,"Foluke","Education","B",830_000),107);
+        empMap.put(new Employee(9,"Toyin","Marketing","A",1_000_000),108);
+        empMap.put(new Employee(10,"Idowu","Marketing","C",50_000),109);
 
         empMap.entrySet().stream().sorted(Comparator.comparing( e -> e.getKey().getSalary())).forEach(System.out::println);
         empMap.entrySet().stream().sorted(Entry.comparingByKey(Comparator.comparing(Employee::getSalary))).forEach(System.out::println);// alternative way

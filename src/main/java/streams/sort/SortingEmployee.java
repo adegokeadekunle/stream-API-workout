@@ -1,6 +1,6 @@
 package streams.sort;
 
-import entityAndDatabases.employee.DataBase;
+import entityAndDatabases.employee.EmpDataBase;
 import entityAndDatabases.employee.Employee;
 
 import java.util.Collections;
@@ -10,7 +10,7 @@ import java.util.List;
 public class SortingEmployee {
     public static void main(String[] args) {
 
-        List<Employee> emp = DataBase.getEmployees();
+        List<Employee> emp = EmpDataBase.getEmployees();
 
         //Traditional method
         Collections.sort(emp,(o1,o2)-> (int)(o1.getSalary() - o2.getSalary()));

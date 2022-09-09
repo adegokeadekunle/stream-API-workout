@@ -19,5 +19,7 @@ public class FlatMapMethod {
                 .filter(num -> num.getPhoneNumber().contains("08098893833"))
                 .flatMap(c -> c.getPhoneNumber().stream()).toList();
         System.out.println(phoneNumbers2);
+
+//        List<String> phoneNumbers3  = customer.stream().flatMap( e -> e.getPhoneNumber().stream()).toList();
     }
 }

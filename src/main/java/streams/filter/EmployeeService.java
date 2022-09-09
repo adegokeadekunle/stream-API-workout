@@ -4,7 +4,7 @@ import entityAndDatabases.employee.Employee;
 
 import java.util.List;
 
-import static entityAndDatabases.employee.DataBase.getEmployees;
+import static entityAndDatabases.employee.EmpDataBase.getEmployees;
 
 public class EmployeeService {
     public List<Employee> evaluateTaxUsers(){
